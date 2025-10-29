@@ -1,0 +1,27 @@
+// 2d arays are also known as matrix      
+// int matrix[no of rows][no of columns]={{elements of first row separated by commas},{elements of second row separated by commas},{elements of nth row separated by commas}}
+// rows are horizontal(__) and columns are vertical(|)
+
+#include <iostream>
+using namespace std;
+int main() {
+    // Declare and initialize a 2D array (matrix)
+    int matrix[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    //or   method of declare is
+    // int matrix[3][3]={{10,5,9},{5,-1,8}};
+
+    // Access and print elements of the 2D array
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
